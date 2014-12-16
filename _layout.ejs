@@ -13,6 +13,7 @@
   <link href='http://fonts.googleapis.com/css?family=Hind:400,300,500' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="assets/js/jquery.stellar.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js? sensor=false"></script> 
   <script type="text/javascript" src="assets/js/app.js"></script>
 </head>
 <body>
@@ -25,7 +26,7 @@
 
       <ul>
 	  <li><a href="index.html" class="<%= current.source=='index'?'selected':'' %>">Home</a></li>
-	  <li><a href="sponsors.html" class="<%= current.source=='sponsors'?'selected':'' %>">Sponsors</a></li>
+	  <li><a href="sponsorship.html" class="<%= current.source=='sponsors'?'selected':'' %>">Sponsorship</a></li>
 	  <li><a href="projects.html" class="<%= current.source=='projects'?'selected':'' %>">Projects</a></li>
 	  <li><a href="contact.html" class="<%= current.source=='contact'?'selected':'' %>">Contact</a></li>
       </ul>
@@ -42,17 +43,17 @@
   	<div class="column">
   		<img src="assets/img/logo_bw.png"/>
   		<a><p>History</p></a>
-  		<a><p>Current Projects</p></a>
-  		<a><p>Past Projects</p></a>
+  		<a href="projects.html#current_projects"><p>Current Projects</p></a>
+  		<a href="projects.html#past_projects"><p>Past Projects</p></a>
   		<a><p>Achievements</p></a>
   	</div>
   	<div class="column" id="column_2">
-  		<a><p>Sponsors</p></a>
+  		<a href="sponsorship.html#our-sponsors"><p>Sponsors</p></a>
   		<a><p>Sumo Contest</p></a>
   		<a><p>Gallery</p></a>
   		<a><p>Articles</p></a>
   	</div>
-  	<div class="column">
+  	<div class="column" id="contact">
   		<h3>Contact</h3>
   		<a href="contact.html">Visit our contact page</a>
   		<p>E5 1003</p>
